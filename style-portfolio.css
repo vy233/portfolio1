@@ -169,6 +169,7 @@ header .navbar ul li a:hover::before {
 .about-me {
     padding:  100px 15px;
     background-color : #ffffff;
+    /*mau sac*/
 }
 
 .about-me .section-title {

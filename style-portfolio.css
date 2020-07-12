@@ -168,8 +168,9 @@ header .navbar ul li a:hover::before {
 /*About Me*/
 .about-me {
     padding:  100px 15px;
-    blackground-color: #ffffff;
+    background-color : #ffffff;
 }
+
 .about-me .section-title {
      /*background-color: #d5d5d5;*/
      flex: 0 0 100%;
@@ -207,9 +208,6 @@ header .navbar ul li a:hover::before {
     color: #838383;
     font-weight: 400;
     letter-spacing: 2px;
-}
-.about-me .about-content {
-    /*background-color: red;*/
 }
 .about-me .about-content .img {
     flex: 0 0 33.33%;

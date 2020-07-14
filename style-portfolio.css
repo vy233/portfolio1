@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -212,6 +215,7 @@ header .navbar ul li a:hover::before {
 }
 .about-me .about-content .img {
     flex: 0 0 33.33%;
+    padding-top: 20px;
 }
 .about-me .about-content .img img {
     width: 100%;
@@ -228,22 +232,82 @@ header .navbar ul li a:hover::before {
     font-weight: 600;
     margin: 0 0 5px;
     color: #000000;
+    padding-top: 30px;
+    padding-left: 20px;
 }
 .about-me .about-content .text h5 {
     font-size: 18px;
     font-weight: 500;
     margin: 0 0 15px;
     color: #000000;
+    padding-left: 20px;
 }
 .about-me .about-content .text p {
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
     color: #838383;
+    margin: 0 0 10px;
+    padding-left: 20px;
 }
 
 .about-me .about-content .text .info {
-    background-color: #d5d5d5;
     display: flex;
-    
+    flex-wrap: wrap;
+    justify-content: space-between;  
+
+}
+.about-me .about-content .text .info .list {
+    /* background-color: blue; */
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.about-me .about-content .text .info .list {
+    padding-right: 10px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.about-me .about-content .text .info .list {
+    margin: 0;
+}
+
+.about-me .about-content .text .social-links {
+    /* background-color: #d5d5d5; */
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.about-me .about-content .text .social-links a{
+    height: 30px;
+    width: 30px;
+    background-color: #000000;
+    border-radius: 3px;
+    display: inline-block;
+    border: 1px solid #000000;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 1px;
+    -webkit-transiton: all .5s ease;
+    transition: all .5s ease;
+}
+
+.about-me .about-content .text .social-links a:hover {
+    background-color: transparent;
+}
+
+.about-me .about-content .text .social-links a .fa {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.about-me .about-content .text .social-links a:hover .fa {
+    color:  #000000;
 }

@@ -170,17 +170,17 @@ header .navbar ul li a:hover::before {
 /* responsive */ 
 /*About Me*/
 .about-me {
-    padding:  100px 15px;
+    padding:  100px 0px;
     background-color : #ffffff;
     /*mau sac tu nhien*/
 }
 
-.about-me .section-title {
+.section-title {
      /*background-color: #d5d5d5;*/
      flex: 0 0 100%;
      max-width: 100%;
 }
-.about-me .section-title h1 {
+.section-title h1 {
     /*background-color: red;*/
     display: inline-block;
     font-size: 35px;
@@ -192,7 +192,7 @@ header .navbar ul li a:hover::before {
     padding-bottom: 5px;
 }
 /*tạo đường kẻ vàng dưới chữ About Me*/
-.about-me .section-title h1:before {
+.section-title h1:before {
     content: '';
     left: 0;
     position: absolute;
@@ -215,11 +215,11 @@ header .navbar ul li a:hover::before {
 }
 .about-me .about-content .img {
     flex: 0 0 33.33%;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 .about-me .about-content .img img {
     width: 100%;
-    display: block;
+    display: inline-block;
     
 }
 .about-me .about-content .text {
@@ -230,10 +230,10 @@ header .navbar ul li a:hover::before {
 .about-me .about-content .text h4 {
     font-size: 25px;
     font-weight: 600;
-    margin: 0 0 5px;
+    margin: 0 0 2px;
     color: #000000;
-    padding-top: 30px;
-    padding-left: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
 }
 .about-me .about-content .text h5 {
     font-size: 18px;
@@ -244,10 +244,10 @@ header .navbar ul li a:hover::before {
 }
 .about-me .about-content .text p {
     font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
+    font-weight: 200;
+    line-height: 25px;
     color: #838383;
-    margin: 0 0 10px;
+    margin: 0 0 20px;
     padding-left: 20px;
 }
 
@@ -310,4 +310,22 @@ header .navbar ul li a:hover::before {
 
 .about-me .about-content .text .social-links a:hover .fa {
     color:  #000000;
+}
+/*Services*/
+.services {
+    background-color: #f5f8fd;
+    padding: 100px 0px;
+}
+
+/*.text-center{
+    text-align: center!important;   
+}
+.text-left{
+    text-align: left!important;
+}
+.text-right{
+    text-right: right!important;
+}*/
+.services .section-title h1:before{
+    left: 30%;
 }

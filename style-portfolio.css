@@ -314,13 +314,13 @@ header .navbar ul li a:hover::before {
 /*Services*/
 .services {
     background-color: #f5f8fd;
-    padding: 100px 0px;
+    padding: 100px 0px 70px;
 }
 
-/*.text-center{
+.text-center{
     text-align: center!important;   
 }
-.text-left{
+/*.text-left{
     text-align: left!important;
 }
 .text-right{
@@ -328,4 +328,63 @@ header .navbar ul li a:hover::before {
 }*/
 .services .section-title h1:before{
     left: 30%;
+}
+.services .service-content {
+    /*background-color: red;*/
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+}
+.services .service-content .box {
+    background-color: #ffffff;
+    padding: 30px;
+    flex: 0 0 calc(33.33% - 20px); /*khoang cach giua cac o*/
+    max-width: 0 0 calc(33.33% - 20px);
+    margin-right: 15px;
+    border-left: 1px solid #eeeeee;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+}
+.services .service-content .box::before{ /*duong chi vang hien o giua*/
+    content: '';
+    height: 2px;
+    background-color: #febd01;
+    position: absolute;
+    bottom: 0px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all .5s ease;
+}
+.services .service-content .box:hover::before{ /*khi trỏ vao khung nao thi duong chi vang se rộng ra*/
+    width: 100%;
+}
+.services .service-content .box .icon{
+    height: 60px;
+    width: 60px;
+    background-color: #febd01;
+    margin:15px auto 20px;
+    border-radius: 50%;
+    text-align: center; /*icon chinh giua*/
+    
+}
+.services .service-content .box .icon .fa{
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 60px;   /*dua icon tu tren xuong giua*/
+}
+.services .service-content .box h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+.services .service-content .box p {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 25px;
+    color: #838383;
+    margin: 10px 0 15px;
 }

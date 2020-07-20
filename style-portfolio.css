@@ -1,102 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
+
 /*Chua hieu doan duoi nay*/
+
 * {
     box-sizing: border-box;
     margin: 0;
 }
+
+
 /*Chua hieu doan tren nay*/
+
+
 /*home -> header -> container*/
+
 .container {
     max-width: 1140px;
-    
-    margin: auto; /*khung o chinh giua*/
+    margin: auto;
+    /*khung o chinh giua*/
 }
+
+
 /*Sau do bo sung class=row*/
+
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
+
 /*home xong -> header*/
-header {  
+
+header {
     position: absolute;
-    left: 0px; /*sat vach*/
+    left: 0px;
+    /*sat vach*/
     right: 0px;
-    border-bottom: 1px solid #ddc3aa; /*tao duong vien chan duoi thanh navbar*/
-    padding: 0px 15px; 
+    border-bottom: 1px solid #ddc3aa;
+    /*tao duong vien chan duoi thanh navbar*/
+    padding: 0px 15px;
     z-index: 10;
 }
-header .row{
-    justify-content: space-between; /*tao khoang cach o giua brand-name & navbar */
+
+header .row {
+    justify-content: space-between;
+    /*tao khoang cach o giua brand-name & navbar */
     align-items: center;
 }
+
 header .brand-name a {
     /*background-color: blue;*/
     text-decoration: none;
-    font-size: 22px; /*size chu*/
-    font-weight: 600; /*do day cua chu*/
-    color: #ffffff; /*mau chu*/
+    font-size: 22px;
+    /*size chu*/
+    font-weight: 600;
+    /*do day cua chu*/
+    color: #ffffff;
+    /*mau chu*/
     text-transform: uppercase;
-    position: relative; /*hien dau gach chan*/
+    position: relative;
+    /*hien dau gach chan*/
 }
 
-/*chua hieu lam gi vs doan nay*/
 
 /*chua hieu lam gi vs doan nay*/
 
 
+/*chua hieu lam gi vs doan nay*/
 
 header .navbar ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-header .navbar ul li{
-    display: inline-block; /*thanh navbar nam ngang 1 hang*/
-    margin-left: 30px; /*gian khoang cach cac muc - thanh navbar */
+
+header .navbar ul li {
+    display: inline-block;
+    /*thanh navbar nam ngang 1 hang*/
+    margin-left: 30px;
+    /*gian khoang cach cac muc - thanh navbar */
 }
-header .navbar ul li a{
+
+header .navbar ul li a {
     font-size: 15px;
     text-decoration: none;
     line-height: 72px;
     display: block;
-    color: #ffffff; /*mau chu*/
-    font-weight: 600; /*do day cua chu*/
-    position: relative; /*hien dau gach chan*/
+    color: #ffffff;
+    /*mau chu*/
+    font-weight: 600;
+    /*do day cua chu*/
+    position: relative;
+    /*hien dau gach chan*/
 }
+
 header .navbar ul li a::before {
     content: '';
     height: 3px;
     background-color: #ffffff;
     width: 0%;
-    position: absolute; 
+    position: absolute;
     left: 0px;
     bottom: -1px;
     transition: all .1s ease;
-} 
+}
+
 header .navbar ul li a:hover::before {
     width: 100%;
     left: 0;
 }
 
+
 /*home - phan anh - than bai*/
+
 .home {
     min-height: 100vh;
-    background-image: url(img/V5.jpg); /*ghi ten anh vao url() */
-    background-size: cover; /*de anh khop vs khung*/
-    background-position: center; /*de anh o giua trung tam*/
+    background-image: url(img/V5.jpg);
+    /*ghi ten anh vao url() */
+    background-size: cover;
+    /*de anh khop vs khung*/
+    background-position: center;
+    /*de anh o giua trung tam*/
     padding: 15px;
 }
-
-
 
 
 /*code het doan tren -> them class="active" trong dong "Home"*/
@@ -105,53 +136,61 @@ header .navbar ul li a:hover::before {
 /*Sau khi code dong 32 den 43 html thi cai css*/
 
 .home .full-screen {
-    /*background-color: red;*/ 
+    /*background-color: red;*/
     min-height: 100vh;
 }
 
 .home .home-content {
-    /*background-color: blue;*/ 
+    /*background-color: blue;*/
     flex: 0 0 100%;
     max-width: 100%;
-    display: flex; /*doi khoi mau do thanh chieu doc*/
-    flex-wrap: wrap; 
-    align-items: center; /*chu nam giua khoi do*/
+    display: flex;
+    /*doi khoi mau do thanh chieu doc*/
+    flex-wrap: wrap;
+    align-items: center;
+    /*chu nam giua khoi do*/
 }
 
 .home .home-content .block {
     /*background-color: red;*/
     flex: 0 0 75%;
     max-width: 75%;
-    border-left: 5px solid #631616; /*tao duong vien trang ben trai*/
+    border-left: 5px solid #631616;
+    /*tao duong vien trang ben trai*/
 }
-.home .home-content .block h6{
+
+.home .home-content .block h6 {
     color: #631616;
     font-size: 18px;
     font-weight: 500;
     margin: 0;
     padding-left: 20px;
 }
-.home .home-content .block h1{
+
+.home .home-content .block h1 {
     color: #631616;
     font-size: 70px;
     font-weight: 600;
     margin: 0;
     padding-left: 20px;
 }
-.home .home-content .block h3{
+
+.home .home-content .block h3 {
     color: #631616;
     font-size: 25px;
     font-weight: 500;
     margin: 0;
     padding-left: 20px;
 }
-.home .home-content .block .cv-btn{
+
+.home .home-content .block .cv-btn {
     padding-left: 20px;
     padding-top: 20px;
 }
-.home .home-content .block .cv-btn a{
+
+.home .home-content .block .cv-btn a {
     border-radius: 4px;
-    color:  #631616;
+    color: #631616;
     border: 1px solid #631616;
     padding: 10px 25px;
     text-decoration: none;
@@ -162,24 +201,31 @@ header .navbar ul li a:hover::before {
     transition: all .3s ease;
     background-color: transparent;
 }
-.home .home-content .block .cv-btn a:hover{ /*dua tro vao se doi mau nen vs chu*/
+
+.home .home-content .block .cv-btn a:hover {
+    /*dua tro vao se doi mau nen vs chu*/
     background-color: #631616;
     color: #ffffff;
 }
 
-/* responsive */ 
+
+/* responsive */
+
+
 /*About Me*/
+
 .about-me {
-    padding:  100px 0px;
-    background-color : #ffffff;
+    padding: 100px 0px;
+    background-color: #ffffff;
     /*mau sac tu nhien*/
 }
 
 .section-title {
-     /*background-color: #d5d5d5;*/
-     flex: 0 0 100%;
-     max-width: 100%;
+    /*background-color: #d5d5d5;*/
+    flex: 0 0 100%;
+    max-width: 100%;
 }
+
 .section-title h1 {
     /*background-color: red;*/
     display: inline-block;
@@ -187,11 +233,14 @@ header .navbar ul li a:hover::before {
     text-transform: uppercase;
     font-weight: 700px;
     color: #000000;
-    margin:0 0 10px;
+    margin: 0 0 10px;
     position: relative;
     padding-bottom: 5px;
 }
+
+
 /*tạo đường kẻ vàng dưới chữ About Me*/
+
 .section-title h1:before {
     content: '';
     left: 0;
@@ -201,10 +250,11 @@ header .navbar ul li a:hover::before {
     background-color: #febd01;
     bottom: 0px;
 }
-.text-uppercase{
-    text-transform: uppercase!important;
 
+.text-uppercase {
+    text-transform: uppercase!important;
 }
+
 .about-me .section-title p.small {
     /*background-color: blue;*/
     display: block;
@@ -213,20 +263,23 @@ header .navbar ul li a:hover::before {
     font-weight: 400;
     letter-spacing: 2px;
 }
+
 .about-me .about-content .img {
     flex: 0 0 33.33%;
     padding-top: 30px;
 }
+
 .about-me .about-content .img img {
     width: 100%;
     display: inline-block;
-    
 }
+
 .about-me .about-content .text {
     /*background-color: blue;*/
     flex: 0 0 66.66%;
     max-width: 66.66%;
 }
+
 .about-me .about-content .text h4 {
     font-size: 25px;
     font-weight: 600;
@@ -235,6 +288,7 @@ header .navbar ul li a:hover::before {
     padding-top: 20px;
     padding-left: 10px;
 }
+
 .about-me .about-content .text h5 {
     font-size: 18px;
     font-weight: 500;
@@ -242,6 +296,7 @@ header .navbar ul li a:hover::before {
     color: #000000;
     padding-left: 20px;
 }
+
 .about-me .about-content .text p {
     font-size: 15px;
     font-weight: 200;
@@ -254,9 +309,9 @@ header .navbar ul li a:hover::before {
 .about-me .about-content .text .info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;  
-
+    justify-content: space-between;
 }
+
 .about-me .about-content .text .info .list {
     /* background-color: blue; */
     flex: 0 0 calc(50% - 15px);
@@ -268,6 +323,7 @@ header .navbar ul li a:hover::before {
     padding-bottom: 10px;
     padding-left: 20px;
 }
+
 .about-me .about-content .text .info .list {
     padding-right: 10px;
     color: #000000;
@@ -285,7 +341,7 @@ header .navbar ul li a:hover::before {
     padding-left: 20px;
 }
 
-.about-me .about-content .text .social-links a{
+.about-me .about-content .text .social-links a {
     height: 30px;
     width: 30px;
     background-color: #000000;
@@ -309,36 +365,45 @@ header .navbar ul li a:hover::before {
 }
 
 .about-me .about-content .text .social-links a:hover .fa {
-    color:  #000000;
+    color: #000000;
 }
+
+
 /*Services*/
+
 .services {
     background-color: #f5f8fd;
     padding: 100px 0px 70px;
 }
 
-.text-center{
-    text-align: center!important;   
+.text-center {
+    text-align: center!important;
 }
+
+
 /*.text-left{
     text-align: left!important;
 }
 .text-right{
     text-right: right!important;
 }*/
-.services .section-title h1:before{
+
+.services .section-title h1:before {
     left: 30%;
 }
+
 .services .service-content {
     /*background-color: red;*/
     flex: 0 0 100%;
     max-width: 100%;
     display: flex;
 }
+
 .services .service-content .box {
     background-color: #ffffff;
     padding: 30px;
-    flex: 0 0 calc(33.33% - 20px); /*khoang cach giua cac o*/
+    flex: 0 0 calc(33.33% - 20px);
+    /*khoang cach giua cac o*/
     max-width: 0 0 calc(33.33% - 20px);
     margin-right: 15px;
     border-left: 1px solid #eeeeee;
@@ -346,7 +411,9 @@ header .navbar ul li a:hover::before {
     position: relative;
     border-radius: 5px;
 }
-.services .service-content .box::before{ /*duong chi vang hien o giua*/
+
+.services .service-content .box::before {
+    /*duong chi vang hien o giua*/
     content: '';
     height: 2px;
     background-color: #febd01;
@@ -358,29 +425,36 @@ header .navbar ul li a:hover::before {
     margin: auto;
     transition: all .5s ease;
 }
-.services .service-content .box:hover::before{ /*khi trỏ vao khung nao thi duong chi vang se rộng ra*/
+
+.services .service-content .box:hover::before {
+    /*khi trỏ vao khung nao thi duong chi vang se rộng ra*/
     width: 100%;
 }
-.services .service-content .box .icon{
+
+.services .service-content .box .icon {
     height: 60px;
     width: 60px;
     background-color: #febd01;
-    margin:15px auto 20px;
+    margin: 15px auto 20px;
     border-radius: 50%;
-    text-align: center; /*icon chinh giua*/
-    
+    text-align: center;
+    /*icon chinh giua*/
 }
-.services .service-content .box .icon .fa{
+
+.services .service-content .box .icon .fa {
     font-size: 25px;
     color: #ffffff;
-    line-height: 60px;   /*dua icon tu tren xuong giua*/
+    line-height: 60px;
+    /*dua icon tu tren xuong giua*/
 }
+
 .services .service-content .box h5 {
     font-size: 16px;
     font-weight: 600;
     color: #000000;
     margin: 0;
 }
+
 .services .service-content .box p {
     font-size: 15px;
     font-weight: 200;
